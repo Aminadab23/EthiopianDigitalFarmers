@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-!hapeha*2w@o2e!%_9-5=7174kn@8j(l7vwg0-f%z@gc27@h)2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['edf.render.app','localhost','127.0.0.1']
+ALLOWED_HOSTS = ['edf-ozqz.onrender.com','localhost','127.0.0.1']
 
 # Application definition
 
