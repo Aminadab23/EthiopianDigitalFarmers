@@ -28,8 +28,7 @@ SECRET_KEY = 'django-insecure-!hapeha*2w@o2e!%_9-5=7174kn@8j(l7vwg0-f%z@gc27@h)2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["192.168.1.8",'127.0.0.1']
-
+ALLOWED_HOSTS = ['.render.app','localhost','127.0.0.1']
 
 # Application definition
 
@@ -114,8 +113,9 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+import dj_database_url
 
-
+DATABASES['default']= dj_database_url.parse("postgres://edfproject_user:HHvq43il1ejY9t9DkCFPCHAy2AF332aN@dpg-cjh1sbr37aks7380imrg-a.oregon-postgres.render.com/edfproject")
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 

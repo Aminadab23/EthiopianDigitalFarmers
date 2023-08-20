@@ -15,7 +15,6 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
 
-
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def logout(request):
@@ -59,3 +58,5 @@ urlpatterns = [
     ]+  static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 urlpatterns += static(settings.MEDIA_URL, document_root= settings.MEDIA_ROOT)
+
+
