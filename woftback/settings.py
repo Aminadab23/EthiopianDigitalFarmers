@@ -115,7 +115,7 @@ DATABASES = {
 }
 import dj_database_url
 
-DATABASES['default']= dj_database_url.parse("postgres://edfproject_user:HHvq43il1ejY9t9DkCFPCHAy2AF332aN@dpg-cjh1sbr37aks7380imrg-a.oregon-postgres.render.com/edfproject")
+DATABASES['default']= dj_database_url.parse("postgres://edfproject_user:HHvq43il1ejY9t9DkCFPCHAy2AF332aN@dpg-cjh1sbr37aks7380imrg-a/edfproject")
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
