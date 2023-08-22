@@ -26,9 +26,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-!hapeha*2w@o2e!%_9-5=7174kn@8j(l7vwg0-f%z@gc27@h)2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['edf-ozqz.onrender.com','localhost','127.0.0.1', '192.168.100.91']
+ALLOWED_HOSTS = ['127.0.0.1', "www.ethiopiandigitalfarmers.com"]
 
 # Application definition
 
@@ -118,7 +118,7 @@ DATABASES = {
 }
 import dj_database_url
 
-DATABASES['default']= dj_database_url.parse("postgres://edfproject_user:HHvq43il1ejY9t9DkCFPCHAy2AF332aN@dpg-cjh1sbr37aks7380imrg-a/edfproject")
+# DATABASES['default']= dj_database_url.parse("postgres://edfproject_user:HHvq43il1ejY9t9DkCFPCHAy2AF332aN@dpg-cjh1sbr37aks7380imrg-a/edfproject")
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
