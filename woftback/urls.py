@@ -47,8 +47,7 @@ def update_user_profile(request, email):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)    
     
     
-urlpatterns = [
-    
+urlpatterns = [ 
     path('login/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('logout/', logout, name='logout'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
@@ -58,5 +57,3 @@ urlpatterns = [
     ]+  static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 urlpatterns += static(settings.MEDIA_URL, document_root= settings.MEDIA_ROOT)
-
-
